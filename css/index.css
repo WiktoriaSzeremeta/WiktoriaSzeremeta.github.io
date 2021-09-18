@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #d8c35a;
     background-image: url("/images/landing-image.jpg");
     background-position: center;
 	background-size: cover;
