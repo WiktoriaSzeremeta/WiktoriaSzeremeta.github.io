@@ -3,42 +3,62 @@
 
 
 :root {
-	--pictureSecOverlay: rgba(0, 0, 0, 0.486);
-    --text-shadow-color: #967070;
+	--pictureSecOverlay: rgba(150, 150, 150, 0.63);
+    --text-color: rgb(255, 255, 255);
+    --text-shadow-color: #b3a9a9;
+    --secondary-text-color: rgb(255, 77, 145);
+    --secondary-text-shadow-color: rgb(197, 79, 124);
 }
 
 body {
+    margin: 0;
+}
+
+#landing-section {
     text-align: center;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    background-image: url(/images/landing-image.jpg);
+    background-image: url("/images/landing-image.jpg");
     background-position: center;
 	background-size: cover;
     background-blend-mode: soft-light; 
 	background-color: var(--pictureSecOverlay);
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
 	font-family: 'Arvo', serif;
 }
 
-h1 {
+#landing-section h1 {
+    margin: 8% 0 0 0;
     font-size: 5em;
-    margin: 0;
     text-shadow: 3px 3px var(--text-shadow-color);
 }
 
-h2 {
+#landing-section h1 span {
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px var(--secondary-text-shadow-color);
+}
+
+#landing-section h2 {
+    font-size: 2em;
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px var(--secondary-text-shadow-color);
+}
+
+#landing-section h2 span {
+    color: var(--text-color);
+    text-shadow: 3px 3px var(--text-shadow-color);
+}
+
+#landing-section h3 {
     font-size: 1.5em;
-    text-shadow: 2px 2px var(--text-shadow-color);
+    margin-top: 10%;
+    text-shadow: 1px 1px var(--text-shadow-color);
 }
 
-h3 {
-    margin-top: 5%;
-    color: rgb(255, 255, 255);
-}
-
-h3 a {
-    color: rgb(255, 238, 212);
+#landing-section h3 a {
+    color: var(--secondary-text-color);
+    text-shadow: 1px 1px var(--secondary-text-shadow-color);
 }
